@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="index.html"><img src="assets/Logos/logohome.png" id="logo" alt="white batlogo"></a>
-        <a href="index.html" id="home">HOME</a>
+         <a href="index.html" id="home">HOME</a>
         <a href="game.html" id="game">GAME</a>
     </header>
     <hr>
@@ -21,14 +21,14 @@
         <br> <br>
         <b>Il est Batman.</b> 
         <br>
-        <a href="#hero"><button><b>VOIR LE HEROS</b></button></a>
-        <a href="#nemesis"><button><b>LES ADVERSAIRES</b></button></a> 
+        <a href="#hero" class="anchor"><button><b>VOIR LE HEROS</b></button></a>
+        <a href="#nemesis" class="anchor"><button><b>LES ADVERSAIRES</b></button></a> 
         <div class="navigation">
-            <a href="#home"><img src="assets/Logos/logo_bat_flèche.png" class="logo" alt="bat_fleche"></a>
+            <a href="#home" class="anchor"><img src="assets/Logos/logo_bat_flèche.png" class="logo" alt="bat_fleche"></a>
             <a href="https://m.facebook.com" target="_blank"><img src="assets/Logos/icon_facebook.png" class="logo" alt="icone_Faceook"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="assets/Logos/icon_ig.png" class="logo" alt="icone_Instagram"></a>
             <a href="https://twitter.com" target="_blank"><img src="assets/Logos/icon_tw.png" class="logo" alt="icone_Twitter"></a>
-            <a href="#footer"><img src="assets/Logos/logo_bat_flèche_2.png" class="logo" alt="bat_fleche2"></a>
+            <a href="#footer" class="anchor"><img src="assets/Logos/logo_bat_flèche_2.png" class="logo" alt="bat_fleche2"></a>
         </div>
         
     </section>
@@ -191,29 +191,37 @@
         <video src="assets/Illustrations/Batman Begins  Bande Annonce Officielle VF.mp4" controls poster="assets/Illustrations/Bathome_ba2.png"></video>
         <aside class="contacts">
             <h2>PRENONS CONTACT</h2>
-    
-            <h4>ADRESSE EMAIL</h4>
-            <input type="email" name="mail" id="mail" placeholder="Adresse email" >
-            <h4>NEWSLETTER</h4>
-             En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> aventures de Batman :
-             <input type="checkbox">
-             <br><br>
-            <select name="frequence" id="frequence">
-                <option>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                <option value="weekly">Une fois par semaine</option>
-                <option value="weekly*2">Une fois toutes les deux semaines(2 fois par mois)</option>
-                <option value="monthly">Une fois par mois</option>
-                <option value="trimester">Une fois tous les trois mois</option>
-                <option value="semester">Une fois tous les six mois</option>
-            </select>
-            <br><br>
-            <p> Souhaitez-vous recevoir des news?</p>
-            <button>Des films</button> <button>Des commics</button> <button>De tout</button>
-            <br>
-            <h4>MESSAGE</h4>
-            <textarea name="comments" id="comments" cols="100" rows="1" placeholder="Laissez un commentaire pour la communauté"></textarea>
-            <br><br>
-            <button class="confirmation">CONFIRMER</button> 
+            <form action="index.html" method="get">
+                <h4>ADRESSE EMAIL</h4>
+                <input type="email" name="mail" id="mail" placeholder="Adresse email" >
+                <h4>NEWSLETTER</h4>
+                En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> aventures de Batman :
+                
+                    <input type="checkbox" id="newsletter">
+                    <br><br>
+                    <select name="frequence" id="frequence">
+                        <option>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                        <option value="weekly">Une fois par semaine</option>
+                        <option value="weekly*2">Une fois toutes les deux semaines(2 fois par mois)</option>
+                        <option value="monthly">Une fois par mois</option>
+                        <option value="trimester">Une fois tous les trois mois</option>
+                        <option value="semester">Une fois tous les six mois</option>
+                    </select>
+                    <br><br>
+                    <p> Souhaitez-vous recevoir des news?</p>
+                    <input type="radio" name="news" id="movies" value="movies"><label for="movies">Des films</label> 
+                    <input type="radio" name="news" id="commics" value="commics"><label for="commics">Des commics</label>
+                    <input type="radio" name="news" id="all" value="all"><label for="all">De tout</label>
+        
+                    <br>
+                    <h4>MESSAGE</h4>
+                    <textarea name="comments" id="comments" cols="100" rows="1" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                    <br><br>
+
+                    <input type="submit" value="CONFIRMER" class="confirmation">
+                    <!-- <button >CONFIRMER</button> -->
+             </form>
+                 
         </aside>
         
             <img src="assets/Logos/icon_guillemets_1.png" class="guillemets_ouvrantes" alt="icon_guillemets_ouvrantes">
