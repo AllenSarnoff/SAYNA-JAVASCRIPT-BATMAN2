@@ -14,6 +14,8 @@
         <a href="game.html" id="game">GAME</a>
     </header>
     <hr>
+    <img src="Assets/Logos/logohome.png" alt="Image qui suit la souris" id="logoBat" 
+        style="position:absolute;display:block;z-index:5;" />
     <section id="introduction">
         <h1>
             LET'S PLAY A LITTLE GAME...
@@ -31,11 +33,21 @@
 
     <div class="starting">
         <h1>CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ?</h1>
-        <div class="quiz">
-            <img src="Assets/Illustrations/Batgame_2.png" alt="a Batman's pictures">
+            <img src="Assets/Illustrations/Batgame_2.png" alt="a Batman's pictures">     
+        <button class="start">DEMARRER LE QUIZ</button>
+    </div>
+    <div class="quiz">
+        <h1 class="title">QUIZ</h1>
+        <div class="quizPack">
+            <h2 id="question">Question</h2>
+            <div id="answersButton">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button class="nextQuestion">QUESTION SUIVANTE</button>
         </div>
-        
-        <button>DEMARRER LE QUIZ</button>
     </div>
     
         <footer id="footer">

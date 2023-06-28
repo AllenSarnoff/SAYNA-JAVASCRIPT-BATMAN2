@@ -11,17 +11,29 @@ function smoothing(event){
 }
 
 const conf = document.querySelector(".confirmation");
-conf.addEventListener("click", takingInformations());
+const overlay = document.querySelector(".overlay");
+const popUpMessage = document.querySelector(".popUpMessage");
+
+conf.addEventListener("click", takingInformations);
 
 function takingInformations(){
     let mail = document.querySelector("#mail");
     let acceptNewsletter;
-    let frequency = document.querySelector("#frequence")
-    
-    // alert("Hue Cannabis");
+    let frequency = document.querySelector("#frequence");
+    let message = document.querySelector("#comments");
+    overlay.style.display="block";
+    function closePopUp() {
+        overlay.style.display = "none";
+    }
+    setTimeout(closePopUp, 2500);
 }
 
-const animation = document.querySelector("body");
-window.onscroll = function(){
-    animation.setAttribute("class", "elements")
-}
+let logoBat = document.querySelector("#logoBat");
+document.onmousemove = follow;
+    function follow(e){
+        var x =  e.pageX;
+        var y =  e.pageY;
+                        
+        logoBat.style.left = (x+1)+'px';
+        logoBat.style.top  = (y+1)+'px';
+    }

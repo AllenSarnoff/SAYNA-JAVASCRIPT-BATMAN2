@@ -14,6 +14,8 @@
         <a href="game.html" id="game">GAME</a>
     </header>
     <hr>
+    <img src="Assets/Logos/logohome.png" alt="Image qui suit la souris" id="logoBat" 
+        style="position:absolute;display:block;z-index:5;" />
     <section id="introduction">
         Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les 
         criminels de Gotham City. 
@@ -191,7 +193,7 @@
         <video src="assets/Illustrations/Batman Begins  Bande Annonce Officielle VF.mp4" controls poster="assets/Illustrations/Bathome_ba2.png"></video>
         <aside class="contacts">
             <h2>PRENONS CONTACT</h2>
-            <form action="index.html" method="get">
+            
                 <h4>ADRESSE EMAIL</h4>
                 <input type="email" name="mail" id="mail" placeholder="Adresse email" >
                 <h4>NEWSLETTER</h4>
@@ -219,8 +221,14 @@
                     <br><br>
 
                     <input type="submit" value="CONFIRMER" class="confirmation">
-                    <!-- <button >CONFIRMER</button> -->
-             </form>
+                    <div class="overlay">
+                        <div class="parent">
+                            <div class="popUp">
+                                <h2 class="popUpMessage">Message reçu</h2>
+                            </div>
+                        </div>
+                    </div>
+            
                  
         </aside>
         
